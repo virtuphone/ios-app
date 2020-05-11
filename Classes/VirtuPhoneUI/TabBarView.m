@@ -47,9 +47,13 @@
 	[NSNotificationCenter.defaultCenter removeObserver:self];
 }
 
-- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
-	[self update:FALSE];
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
+    [self update:FALSE];
 }
+
+//- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
+//	[self update:FALSE];
+//}
 
 #pragma mark - Event Functions
 

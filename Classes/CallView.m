@@ -19,8 +19,6 @@
 
 #import <AddressBook/AddressBook.h>
 #import <AudioToolbox/AudioToolbox.h>
-#import <OpenGLES/EAGL.h>
-#import <OpenGLES/EAGLDrawable.h>
 #import <QuartzCore/CAAnimation.h>
 #import <QuartzCore/QuartzCore.h>
 #import <UserNotifications/UserNotifications.h>

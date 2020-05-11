@@ -79,9 +79,7 @@
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>ITSAppUsesNonExemptEncryption</key>
-	<true/>
-	<key>ITSEncryptionExportComplianceCode</key>
-	<string>b5cb085f-772a-4a4f-8c77-5d1332b1f93f</string>
+	<false/>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSBluetoothPeripheralUsageDescription</key>
@@ -89,9 +87,9 @@
 	<key>NSCameraUsageDescription</key>
 	<string>Share photos with your friends and customize avatars</string>
 	<key>NSContactsUsageDescription</key>
-	<string>Make calls with your friends</string>
+	<string>Make calls to your contacts</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Linphone will not use, store or communicate your location. The authorization allows us to detect Wifi connection changes</string>
+	<string>VirtuPhone will not use, store or communicate your location. The authorization allows us to detect Wifi connection changes</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>Use microphone to make audio calls</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>

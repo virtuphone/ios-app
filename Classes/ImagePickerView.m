@@ -17,7 +17,7 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#import <MobileCoreServices/UTCoreTypes.h>
+#import <CoreServices/UTCoreTypes.h>
 #import "ImagePickerView.h"
 #import "PhoneMainView.h"
 #import "SVProgressHUD.h"
@@ -25,7 +25,6 @@
 
 
 @implementation ImagePickerView
-
 @synthesize imagePickerDelegate;
 @synthesize sourceType;
 @synthesize mediaTypes;
