@@ -276,12 +276,12 @@ extension ProviderDelegate: CXProviderDelegate {
 
 	func provider(_ provider: CXProvider, didActivate audioSession: AVAudioSession) {
 		Log.directLog(BCTBX_LOG_MESSAGE, text: "CallKit: audio session activated.")
-//		CallManager.instance().lc?.audioSessionActivated(actived: true)
+        CallManager.instance().lc?.activateAudioSession(actived: true)
 	}
 
 	func provider(_ provider: CXProvider, didDeactivate audioSession: AVAudioSession) {
 		Log.directLog(BCTBX_LOG_MESSAGE, text: "CallKit: audio session deactivated.")
-//		CallManager.instance().lc?.audioSessionActivated(actived: false)
+        CallManager.instance().lc?.activateAudioSession(actived: false)
 	}
 }
 

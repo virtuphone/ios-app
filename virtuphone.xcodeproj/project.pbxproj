@@ -31,6 +31,9 @@
 		22D1B68112A3E0BE001AE361 /* libresolv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D1B68012A3E0BE001AE361 /* libresolv.dylib */; };
 		22E0A822111C44E100B04932 /* AboutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E0A81C111C44E100B04932 /* AboutView.m */; };
 		22F2508E107141E100AC9B3F /* DialerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F2508C107141E100AC9B3F /* DialerView.m */; };
+		234C875024698BC700236C5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 234C874F24698BC700236C5B /* LaunchScreen.storyboard */; };
+		234C875324698F8800236C5B /* launchscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 234C875124698F8800236C5B /* launchscreen.png */; };
+		234C875424698F8800236C5B /* launchscreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 234C875224698F8800236C5B /* launchscreen@2x.png */; };
 		244523AF1E8266CC0037A187 /* chat_delivered.png in Resources */ = {isa = PBXBuildFile; fileRef = 244523AC1E8266CC0037A187 /* chat_delivered.png */; };
 		244523B01E8266CC0037A187 /* chat_error.png in Resources */ = {isa = PBXBuildFile; fileRef = 244523AD1E8266CC0037A187 /* chat_error.png */; };
 		244523B11E8266CC0037A187 /* chat_read.png in Resources */ = {isa = PBXBuildFile; fileRef = 244523AE1E8266CC0037A187 /* chat_read.png */; };
@@ -614,7 +617,6 @@
 		63CE58401C85EBF400304800 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63CE583F1C85EBF400304800 /* VideoToolbox.framework */; };
 		63D11C531C3D501200E8FCEE /* Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D11C521C3D501200E8FCEE /* Log.m */; };
 		63DFE04B1C40161700DA5E87 /* notes_of_the_optimistic.caf in Resources */ = {isa = PBXBuildFile; fileRef = 63DFE0451C40161700DA5E87 /* notes_of_the_optimistic.caf */; };
-		63E27A321C4FECD000D332AE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63E27A311C4FECD000D332AE /* LaunchScreen.xib */; };
 		63E27A521C50EDB000D332AE /* hold.mkv in Resources */ = {isa = PBXBuildFile; fileRef = 63E27A511C50EB2700D332AE /* hold.mkv */; };
 		63E59A3F1ADE70D900646FB3 /* InAppProductsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E59A3E1ADE70D900646FB3 /* InAppProductsManager.m */; };
 		63E802DB1C625AEF000D5509 /* (null) in Resources */ = {isa = PBXBuildFile; };
@@ -838,6 +840,9 @@
 		22E0A81D111C44E100B04932 /* AboutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutView.h; sourceTree = "<group>"; };
 		22F2508B107141E100AC9B3F /* DialerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DialerView.h; sourceTree = "<group>"; };
 		22F2508C107141E100AC9B3F /* DialerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DialerView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		234C874F24698BC700236C5B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		234C875124698F8800236C5B /* launchscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchscreen.png; sourceTree = "<group>"; };
+		234C875224698F8800236C5B /* launchscreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launchscreen@2x.png"; sourceTree = "<group>"; };
 		244523AC1E8266CC0037A187 /* chat_delivered.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat_delivered.png; sourceTree = "<group>"; };
 		244523AD1E8266CC0037A187 /* chat_error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat_error.png; sourceTree = "<group>"; };
 		244523AE1E8266CC0037A187 /* chat_read.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat_read.png; sourceTree = "<group>"; };
@@ -881,7 +886,6 @@
 		570742601D5A09B8004B9C84 /* ShopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopView.h; sourceTree = "<group>"; };
 		5E58962520DCE5700030868C /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
 		5EF0C33820C806A5005081B0 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
-		6130C85B22BBB493009CC79C /* LaunchScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchScreen.h; sourceTree = "<group>"; };
 		6134812C2406CECC00695B41 /* ConfigManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigManager.swift; sourceTree = "<group>"; };
 		6134812E2407B35200695B41 /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
 		6135761A240E81AC005304D4 /* UIInterfaceStyleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIInterfaceStyleButton.h; sourceTree = "<group>"; };
@@ -1493,7 +1497,6 @@
 		63D11C521C3D501200E8FCEE /* Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Log.m; path = Utils/Log.m; sourceTree = "<group>"; };
 		63D11C541C3D503A00E8FCEE /* Log.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
 		63DFE0451C40161700DA5E87 /* notes_of_the_optimistic.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = notes_of_the_optimistic.caf; sourceTree = "<group>"; };
-		63E27A311C4FECD000D332AE /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		63E27A511C50EB2700D332AE /* hold.mkv */ = {isa = PBXFileReference; lastKnownFileType = file; path = hold.mkv; sourceTree = "<group>"; };
 		63E59A3D1ADE6ECB00646FB3 /* InAppProductsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppProductsManager.h; sourceTree = "<group>"; };
 		63E59A3E1ADE70D900646FB3 /* InAppProductsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppProductsManager.m; sourceTree = "<group>"; };
@@ -1976,8 +1979,6 @@
 				D37EE11016035793003608A6 /* ImageView.xib */,
 				63E59A3D1ADE6ECB00646FB3 /* InAppProductsManager.h */,
 				63E59A3E1ADE70D900646FB3 /* InAppProductsManager.m */,
-				6130C85B22BBB493009CC79C /* LaunchScreen.h */,
-				63E27A311C4FECD000D332AE /* LaunchScreen.xib */,
 				1D3623240D0F684500981E51 /* VirtuPhoneAppDelegate.h */,
 				1D3623250D0F684500981E51 /* VirtuPhoneAppDelegate.m */,
 				D37DC6BF1594AE1800B2A5EB /* VirtuPhoneCoreSettingsStore.h */,
@@ -2022,6 +2023,7 @@
 				6134812C2406CECC00695B41 /* ConfigManager.swift */,
 				6134812E2407B35200695B41 /* AppManager.swift */,
 				614C087623D1A35E00217F80 /* virtuphone-Bridging-Header.h */,
+				234C874F24698BC700236C5B /* LaunchScreen.storyboard */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -2316,6 +2318,8 @@
 		633FEBE11D3CD5570014B822 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				234C875124698F8800236C5B /* launchscreen.png */,
+				234C875224698F8800236C5B /* launchscreen@2x.png */,
 				633FEBE21D3CD5570014B822 /* add_field_default.png */,
 				633FEBE31D3CD5570014B822 /* add_field_default@2x.png */,
 				633FEBE41D3CD5570014B822 /* add_field_over.png */,
@@ -3295,6 +3299,7 @@
 				61AEBEC62191E47500F35E7F /* chevron_list_close.png in Resources */,
 				CF7602D8210867E800749F76 /* RecordingsListView.xib in Resources */,
 				639E9CAC1C0DB80300019A75 /* UIContactDetailsCell.xib in Resources */,
+				234C875024698BC700236C5B /* LaunchScreen.storyboard in Resources */,
 				633FEE511D3CD5590014B822 /* deselect_all@2x.png in Resources */,
 				8CF25D951F9F336100BEA0C1 /* check_unselected@2x.png in Resources */,
 				F088488A19FF8C41007FFCF3 /* UIContactCell.xib in Resources */,
@@ -3396,7 +3401,6 @@
 				633FEEB01D3CD55A0014B822 /* numpad_2_over~ipad@2x.png in Resources */,
 				633FEE2A1D3CD5590014B822 /* color_A.png in Resources */,
 				633FEEA41D3CD55A0014B822 /* numpad_1_default@2x.png in Resources */,
-				63E27A321C4FECD000D332AE /* LaunchScreen.xib in Resources */,
 				633FEED11D3CD55A0014B822 /* numpad_6~ipad.png in Resources */,
 				CF7602E82108759A00749F76 /* UIRecordingCell.xib in Resources */,
 				633FEED21D3CD55A0014B822 /* numpad_6~ipad@2x.png in Resources */,
@@ -3448,6 +3452,7 @@
 				633FEEDC1D3CD55A0014B822 /* numpad_8_default@2x.png in Resources */,
 				633FEDAE1D3CD5590014B822 /* call_add_default.png in Resources */,
 				61AEBEC42191D7D900F35E7F /* UIDevicesDetails.xib in Resources */,
+				234C875424698F8800236C5B /* launchscreen@2x.png in Resources */,
 				633FEE1D1D3CD5590014B822 /* chat_start_body_default~ipad@2x.png in Resources */,
 				633FEEEB1D3CD55A0014B822 /* numpad_hash_default.png in Resources */,
 				633FEF221D3CD55A0014B822 /* route_bluetooth_default.png in Resources */,
@@ -3517,6 +3522,7 @@
 				633FEECF1D3CD55A0014B822 /* numpad_6_over~ipad.png in Resources */,
 				61586B87217A17160038AC45 /* menu_assistant@2x.png in Resources */,
 				633FEE9A1D3CD55A0014B822 /* nowebcamCIF.jpg in Resources */,
+				234C875324698F8800236C5B /* launchscreen.png in Resources */,
 				61586B89217A17220038AC45 /* menu_link_account.png in Resources */,
 				633FEF351D3CD55A0014B822 /* routes_default@2x.png in Resources */,
 				633FEEDB1D3CD55A0014B822 /* numpad_8_default.png in Resources */,
@@ -4512,7 +4518,6 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"DEBUG=1",
-					HAVE_G729,
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
@@ -4538,6 +4543,7 @@
 					"-DENABLE_SMS_INVITE=TRUE",
 					"$(inherited)",
 					"-DLINPHONE_SDK_VERSION=\\\"4.4.0-alpha.222+6838dc1\\\"",
+					"-DENABLE_G729=ON",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.virtuphone.ios;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)app";
@@ -4655,6 +4661,7 @@
 					"-DENABLE_SMS_INVITE=TRUE",
 					"$(inherited)",
 					"-DLINPHONE_SDK_VERSION=\\\"4.4.0-alpha.222+6838dc1\\\"",
+					"-DENABLE_G729=ON",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.virtuphone.ios;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)app";
@@ -4772,6 +4779,7 @@
 					"-DENABLE_SMS_INVITE=TRUE",
 					"$(inherited)",
 					"-DLINPHONE_SDK_VERSION=\\\"4.4.0-alpha.222+6838dc1\\\"",
+					"-DENABLE_G729=ON",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.virtuphone.ios;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)app";
@@ -4888,6 +4896,7 @@
 					"-DENABLE_SMS_INVITE=TRUE",
 					"$(inherited)",
 					"-DLINPHONE_SDK_VERSION=\\\"4.4.0-alpha.222+6838dc1\\\"",
+					"-DENABLE_G729=ON",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.virtuphone.ios;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)app";

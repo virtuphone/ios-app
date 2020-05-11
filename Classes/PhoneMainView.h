@@ -50,7 +50,7 @@
 #import "SideMenuView.h"
 #import "UIConfirmationDialog.h"
 #import "Utils.h"
-#import "LaunchScreen.h"
+//#import "LaunchScreen.h"
 
 #define DYNAMIC_CAST(x, cls)                                                                                           \
 	({                                                                                                                 \

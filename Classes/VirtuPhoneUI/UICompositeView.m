@@ -149,11 +149,11 @@
 	 the device screen size at load */
 	[self updateViewsFramesAccordingToLaunchOrientation];
 	[super viewDidLoad];
-	NSArray * arr =[[NSBundle mainBundle] loadNibNamed:@"LaunchScreen" owner:nil options:nil];
-	LaunchScreen * customView = [arr firstObject];
-	customView.frame = self.view.frame;
-	customView.tag = 999;
-	[self.view addSubview:customView];
+//	NSArray * arr =[[NSBundle mainBundle] loadNibNamed:@"LaunchScreen" owner:nil options:nil];
+//	LaunchScreen * customView = [arr firstObject];
+//	customView.frame = self.view.frame;
+//	customView.tag = 999;
+//	[self.view addSubview:customView];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
