@@ -94,43 +94,45 @@
 		if (PhoneMainView.instance.currentView == ContactsListView.compositeViewDescription || PhoneMainView.instance.currentView == ContactDetailsView.compositeViewDescription) {
 			[PhoneMainView.instance changeCurrentView:DialerView.compositeViewDescription];
 		}
-                [instance.fastAddressBook fetchContactsInBackGroundThread];
-                instance.fastAddressBook.needToUpdate = FALSE;
+        [instance.fastAddressBook fetchContactsInBackGroundThread];
+        instance.fastAddressBook.needToUpdate = FALSE;
+    }
+
+    LinphoneCall *call = linphone_core_get_current_call(LC);
+
+    if (call) {
+      if (call == instance->currentCallContextBeforeGoingBackground.call) {
+        const LinphoneCallParams *params =
+            linphone_call_get_current_params(call);
+        if (linphone_call_params_video_enabled(params)) {
+          linphone_call_enable_camera(
+              call, instance->currentCallContextBeforeGoingBackground
+                        .cameraIsEnabled);
         }
-
-        LinphoneCall *call = linphone_core_get_current_call(LC);
-
-        if (call) {
-          if (call == instance->currentCallContextBeforeGoingBackground.call) {
-            const LinphoneCallParams *params =
-                linphone_call_get_current_params(call);
-            if (linphone_call_params_video_enabled(params)) {
-              linphone_call_enable_camera(
-                  call, instance->currentCallContextBeforeGoingBackground
-                            .cameraIsEnabled);
-            }
-            instance->currentCallContextBeforeGoingBackground.call = 0;
-          } else if (linphone_call_get_state(call) ==
-                     LinphoneCallIncomingReceived) {
-            if ((floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_9_x_Max)) {
-              if ([VirtuPhoneManager.instance lpConfigBoolForKey:@"autoanswer_notif_preference"]) {
-                linphone_call_accept(call);
-                [PhoneMainView.instance changeCurrentView:CallView.compositeViewDescription];
-              } else {
-                [PhoneMainView.instance displayIncomingCall:call];
-              }
-            } else {
-              // Click the call notification when callkit is disabled, show app view.
-              [PhoneMainView.instance displayIncomingCall:call];
-            }
-
-            // in this case, the ringing sound comes from the notification.
-            // To stop it we have to do the iOS7 ring fix...
-            [self fixRing];
+        instance->currentCallContextBeforeGoingBackground.call = 0;
+      } else if (linphone_call_get_state(call) ==
+                 LinphoneCallIncomingReceived) {
+        if ((floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_9_x_Max)) {
+          if ([VirtuPhoneManager.instance lpConfigBoolForKey:@"autoanswer_notif_preference"]) {
+            linphone_call_accept(call);
+            [PhoneMainView.instance changeCurrentView:CallView.compositeViewDescription];
+          } else {
+            [PhoneMainView.instance displayIncomingCall:call];
           }
+        } else {
+          // Click the call notification when callkit is disabled, show app view.
+          [PhoneMainView.instance displayIncomingCall:call];
         }
-        [VirtuPhoneManager.instance.iapManager check];
+
+        // in this case, the ringing sound comes from the notification.
+        // To stop it we have to do the iOS7 ring fix...
+        [self fixRing];
+      }
+    }
+    
+    [VirtuPhoneManager.instance.iapManager check];
     if (_shortcutItem) {
+        LOGI(@"Shortcut Item");
         [self handleShortcut:_shortcutItem];
         _shortcutItem = nil;
     }

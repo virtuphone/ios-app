@@ -466,38 +466,38 @@ static RootViewManager *rootViewManagerInstance = nil;
 - (void)startUp {
 	@try {
 		VirtuPhoneManager *lm = VirtuPhoneManager.instance;
-                LOGI(@"%s", linphone_global_state_to_string(
-                                linphone_core_get_global_state(LC)));
-                if (linphone_core_get_global_state(LC) != LinphoneGlobalOn) {
-                  [self changeCurrentView:DialerView.compositeViewDescription];
-                } else if ([VirtuPhoneManager.instance
-                               lpConfigBoolForKey:
-                                   @"enable_first_login_view_preference"] ==
-                           true) {
-                  [PhoneMainView.instance
-                      changeCurrentView:FirstLoginView
-                                            .compositeViewDescription];
-                } else {
-                  // always start to dialer when testing
-                  // Change to default view
-                  const MSList *list = linphone_core_get_proxy_config_list(LC);
-                  if (list != NULL ||
-                      ([lm lpConfigBoolForKey:@"hide_assistant_preference"] ==
-                       true) ||
-                      lm.isTesting) {
-                    [self
-                        changeCurrentView:DialerView.compositeViewDescription];
-                  } else {
-                    AssistantView *view = VIEW(AssistantView);
-                    [PhoneMainView.instance
-                        changeCurrentView:view.compositeViewDescription];
-                    [view reset];
-                  }
-                }
-                [self updateApplicationBadgeNumber]; // Update Badge at startup
-        } @catch (NSException *exception) {
-          // we'll wait until the app transitions correctly
+        LOGI(@"%s", linphone_global_state_to_string(
+                        linphone_core_get_global_state(LC)));
+        if (linphone_core_get_global_state(LC) != LinphoneGlobalOn) {
+          [self changeCurrentView:DialerView.compositeViewDescription];
+        } else if ([VirtuPhoneManager.instance
+                       lpConfigBoolForKey:
+                           @"enable_first_login_view_preference"] ==
+                   true) {
+          [PhoneMainView.instance
+              changeCurrentView:FirstLoginView
+                                    .compositeViewDescription];
+        } else {
+          // always start to dialer when testing
+          // Change to default view
+          const MSList *list = linphone_core_get_proxy_config_list(LC);
+          if (list != NULL ||
+              ([lm lpConfigBoolForKey:@"hide_assistant_preference"] ==
+               true) ||
+              lm.isTesting) {
+            [self
+                changeCurrentView:DialerView.compositeViewDescription];
+          } else {
+            AssistantView *view = VIEW(AssistantView);
+            [PhoneMainView.instance
+                changeCurrentView:view.compositeViewDescription];
+            [view reset];
+          }
         }
+        [self updateApplicationBadgeNumber]; // Update Badge at startup
+    } @catch (NSException *exception) {
+      // we'll wait until the app transitions correctly
+    }
 }
 
 - (void)updateApplicationBadgeNumber {
