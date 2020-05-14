@@ -619,7 +619,7 @@ static UICompositeViewDescription *compositeDescription = nil;
 #if DEBUG
 		UIAssistantTextField *atf =
 			(UIAssistantTextField *)[self findView:ViewElement_Domain inView:view ofType:UIAssistantTextField.class];
-		atf.text = @"test.linphone.org";
+		atf.text = @"virtuphone.io";
 #endif
 	}
 	phone_number_length = 0;
