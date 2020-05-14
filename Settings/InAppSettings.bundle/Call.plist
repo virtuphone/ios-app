@@ -70,7 +70,7 @@
 			<key>AutocorrectionType</key>
 			<string>No</string>
 			<key>DefaultValue</key>
-			<string></string>
+			<string>#99</string>
 			<key>IsSecure</key>
 			<false/>
 			<key>Type</key>

@@ -28,13 +28,13 @@
                 <view autoresizesSubviews="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UhA-h1-Cu8" userLabel="detailsView">
                     <rect key="frame" x="187" y="51" width="187" height="681"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <color key="backgroundColor" red="0.1864533126" green="0.43557524679999998" blue="0.71378302569999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <gestureRecognizers/>
                 </view>
                 <view autoresizesSubviews="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="15" userLabel="mainView">
                     <rect key="frame" x="0.0" y="51" width="188" height="681"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <color key="backgroundColor" red="0.1864533126" green="0.43557524679999998" blue="0.71378302569999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <gestureRecognizers/>
                     <connections>
                         <outletCollection property="gestureRecognizers" destination="40" appends="YES" id="41"/>
@@ -43,7 +43,7 @@
                 <view autoresizesSubviews="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="16" userLabel="tabBar">
                     <rect key="frame" x="0.0" y="746" width="375" height="66"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <color key="backgroundColor" red="0.1864533126" green="0.43557524679999998" blue="0.71378302569999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                 </view>
                 <view clearsContextBeforeDrawing="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="26" userLabel="sideMenuView">
                     <rect key="frame" x="-375" y="51" width="375" height="761"/>
@@ -55,7 +55,7 @@
                     <color key="backgroundColor" red="0.00115492288" green="0.44242411850000002" blue="0.7368559241" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </view>
             </subviews>
-            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" red="0.1864533126" green="0.43557524679999998" blue="0.71378302569999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <nil key="simulatedStatusBarMetrics"/>
             <viewLayoutGuide key="safeArea" id="JWS-o5-QR7"/>
             <point key="canvasLocation" x="-139.85507246376812" y="-17.075892857142858"/>
