@@ -4537,8 +4537,8 @@
 				OTHER_CFLAGS = (
 					"-DBCTBX_LOG_DOMAIN=\\\"ios\\\"",
 					"-DCHECK_VERSION_UPDATE=FALSE",
-					"-DENABLE_QRCODE=TRUE",
-					"-DENABLE_SMS_INVITE=TRUE",
+					"-DENABLE_QRCODE=FALSE",
+					"-DENABLE_SMS_INVITE=FALSE",
 					"$(inherited)",
 					"-DLINPHONE_SDK_VERSION=\\\"4.4.0-alpha.232+3402a39\\\"",
 				);
@@ -4603,7 +4603,7 @@
 				SDKROOT = iphoneos;
 				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = dynamic;
 				TARGETED_DEVICE_FAMILY = 1;
-				VALID_ARCHS = "arm64 x86_64";
+				VALID_ARCHS = arm64;
 			};
 			name = DistributionAdhoc;
 		};
@@ -4652,8 +4652,8 @@
 				OTHER_CFLAGS = (
 					"-DBCTBX_LOG_DOMAIN=\\\"ios\\\"",
 					"-DCHECK_VERSION_UPDATE=FALSE",
-					"-DENABLE_QRCODE=TRUE",
-					"-DENABLE_SMS_INVITE=TRUE",
+					"-DENABLE_QRCODE=FALSE",
+					"-DENABLE_SMS_INVITE=FALSE",
 					"$(inherited)",
 					"-DLINPHONE_SDK_VERSION=\\\"4.4.0-alpha.232+3402a39\\\"",
 				);
@@ -4718,7 +4718,7 @@
 				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = dynamic;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				TARGETED_DEVICE_FAMILY = 1;
-				VALID_ARCHS = "arm64 x86_64";
+				VALID_ARCHS = arm64;
 			};
 			name = Release;
 		};
@@ -4767,8 +4767,8 @@
 				OTHER_CFLAGS = (
 					"-DBCTBX_LOG_DOMAIN=\\\"ios\\\"",
 					"-DCHECK_VERSION_UPDATE=FALSE",
-					"-DENABLE_QRCODE=TRUE",
-					"-DENABLE_SMS_INVITE=TRUE",
+					"-DENABLE_QRCODE=FALSE",
+					"-DENABLE_SMS_INVITE=FALSE",
 					"$(inherited)",
 					"-DLINPHONE_SDK_VERSION=\\\"4.4.0-alpha.232+3402a39\\\"",
 				);
@@ -4832,7 +4832,7 @@
 				SDKROOT = iphoneos;
 				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = dynamic;
 				TARGETED_DEVICE_FAMILY = 1;
-				VALID_ARCHS = "arm64 x86_64";
+				VALID_ARCHS = arm64;
 			};
 			name = Distribution;
 		};
@@ -4881,8 +4881,8 @@
 				OTHER_CFLAGS = (
 					"-DBCTBX_LOG_DOMAIN=\\\"ios\\\"",
 					"-DCHECK_VERSION_UPDATE=FALSE",
-					"-DENABLE_QRCODE=TRUE",
-					"-DENABLE_SMS_INVITE=TRUE",
+					"-DENABLE_QRCODE=FALSE",
+					"-DENABLE_SMS_INVITE=FALSE",
 					"$(inherited)",
 					"-DLINPHONE_SDK_VERSION=\\\"4.4.0-alpha.232+3402a39\\\"",
 				);
