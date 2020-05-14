@@ -620,7 +620,7 @@
 		63DFE04B1C40161700DA5E87 /* notes_of_the_optimistic.caf in Resources */ = {isa = PBXBuildFile; fileRef = 63DFE0451C40161700DA5E87 /* notes_of_the_optimistic.caf */; };
 		63E27A521C50EDB000D332AE /* hold.mkv in Resources */ = {isa = PBXBuildFile; fileRef = 63E27A511C50EB2700D332AE /* hold.mkv */; };
 		63E59A3F1ADE70D900646FB3 /* InAppProductsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E59A3E1ADE70D900646FB3 /* InAppProductsManager.m */; };
-		63E802DB1C625AEF000D5509 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		63E802DB1C625AEF000D5509 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
 		63EC8D391D7438660066547B /* AssistantLinkView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63EC8D3B1D7438660066547B /* AssistantLinkView.xib */; };
 		63F1DF441BCE618E00EDED90 /* UIAddressTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F1DF431BCE618E00EDED90 /* UIAddressTextField.m */; };
 		63F1DF4B1BCE983200EDED90 /* CallConferenceTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F1DF4A1BCE983200EDED90 /* CallConferenceTableView.m */; };
@@ -2160,7 +2160,7 @@
 			path = VirtuPhoneUI;
 			sourceTree = "<group>";
 		};
-		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+		29B97314FDCFA39411CA2CEA = {
 			isa = PBXGroup;
 			children = (
 				8C23BCB71D82AAC3005F19BB /* virtuphone.entitlements */,
@@ -3137,7 +3137,7 @@
 				zh_CN,
 				fr,
 			);
-			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			mainGroup = 29B97314FDCFA39411CA2CEA;
 			productRefGroup = 19C28FACFE9D520D11CA2CBB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -3195,7 +3195,7 @@
 				633FEED41D3CD55A0014B822 /* numpad_7_default@2x.png in Resources */,
 				633FEEE01D3CD55A0014B822 /* numpad_8_over~ipad@2x.png in Resources */,
 				633FEDDC1D3CD5590014B822 /* call_start_body_disabled~ipad.png in Resources */,
-				63E802DB1C625AEF000D5509 /* (null) in Resources */,
+				63E802DB1C625AEF000D5509 /* BuildFile in Resources */,
 				633FEE2E1D3CD5590014B822 /* color_F.png in Resources */,
 				633FEDC51D3CD5590014B822 /* call_hangup_disabled@2x.png in Resources */,
 				633FEEDF1D3CD55A0014B822 /* numpad_8_over~ipad.png in Resources */,
@@ -4537,12 +4537,10 @@
 				OTHER_CFLAGS = (
 					"-DBCTBX_LOG_DOMAIN=\\\"ios\\\"",
 					"-DCHECK_VERSION_UPDATE=FALSE",
-					"-DENABLE_QRCODE=FALSE",
-					"-DENABLE_SMS_INVITE=FALSE",
-					"-DENABLE_NON_FREE_CODECS=TRUE",
-					"-DENABLE_G729=TRUE",
+					"-DENABLE_QRCODE=TRUE",
+					"-DENABLE_SMS_INVITE=TRUE",
 					"$(inherited)",
-					"-DLINPHONE_SDK_VERSION=\\\"4.4.0-alpha.222+6838dc1\\\"",
+					"-DLINPHONE_SDK_VERSION=\\\"4.4.0-alpha.232+3402a39\\\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.virtuphone.ios;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)app";
@@ -4654,12 +4652,10 @@
 				OTHER_CFLAGS = (
 					"-DBCTBX_LOG_DOMAIN=\\\"ios\\\"",
 					"-DCHECK_VERSION_UPDATE=FALSE",
-					"-DENABLE_QRCODE=FALSE",
-					"-DENABLE_SMS_INVITE=FALSE",
-					"-DENABLE_NON_FREE_CODECS=TRUE",
-					"-DENABLE_G729=TRUE",
+					"-DENABLE_QRCODE=TRUE",
+					"-DENABLE_SMS_INVITE=TRUE",
 					"$(inherited)",
-					"-DLINPHONE_SDK_VERSION=\\\"4.4.0-alpha.222+6838dc1\\\"",
+					"-DLINPHONE_SDK_VERSION=\\\"4.4.0-alpha.232+3402a39\\\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.virtuphone.ios;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)app";
@@ -4771,12 +4767,10 @@
 				OTHER_CFLAGS = (
 					"-DBCTBX_LOG_DOMAIN=\\\"ios\\\"",
 					"-DCHECK_VERSION_UPDATE=FALSE",
-					"-DENABLE_QRCODE=FALSE",
-					"-DENABLE_SMS_INVITE=FALSE",
-					"-DENABLE_NON_FREE_CODECS=TRUE",
-					"-DENABLE_G729=TRUE",
+					"-DENABLE_QRCODE=TRUE",
+					"-DENABLE_SMS_INVITE=TRUE",
 					"$(inherited)",
-					"-DLINPHONE_SDK_VERSION=\\\"4.4.0-alpha.222+6838dc1\\\"",
+					"-DLINPHONE_SDK_VERSION=\\\"4.4.0-alpha.232+3402a39\\\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.virtuphone.ios;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)app";
@@ -4887,12 +4881,10 @@
 				OTHER_CFLAGS = (
 					"-DBCTBX_LOG_DOMAIN=\\\"ios\\\"",
 					"-DCHECK_VERSION_UPDATE=FALSE",
-					"-DENABLE_QRCODE=FALSE",
-					"-DENABLE_SMS_INVITE=FALSE",
-					"-DENABLE_NON_FREE_CODECS=TRUE",
-					"-DENABLE_G729=TRUE",
+					"-DENABLE_QRCODE=TRUE",
+					"-DENABLE_SMS_INVITE=TRUE",
 					"$(inherited)",
-					"-DLINPHONE_SDK_VERSION=\\\"4.4.0-alpha.222+6838dc1\\\"",
+					"-DLINPHONE_SDK_VERSION=\\\"4.4.0-alpha.232+3402a39\\\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.virtuphone.ios;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)app";
